@@ -1,0 +1,13 @@
+# Adobe files
+*.ai
+*.indd
+
+# Archives
+*.zip
+
+# Penpot source files
+*.penpot
+
+# System files
+Thumbs.db
+.DS_Store
