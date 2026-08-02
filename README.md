@@ -20,6 +20,8 @@ UX/UI • Branding • Graphic Design • Web Design • HTML • CSS • Bootst
 
 Les différentes étapes seront ajoutées progressivement au dépôt afin de refléter l'évolution du projet.
 
+DEMO : https://olga21-12.github.io/les_cailloux-case_study/
+
 ---
 
 ## 📖 Présentation du projet
