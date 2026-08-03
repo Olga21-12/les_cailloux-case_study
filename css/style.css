@@ -34,15 +34,17 @@ h1, h2, h3,
 
 /* ----- logo ----- */
 .logo-img {
-    max-width: 50%;
+    max-width: 50px;
 }
 
 .title-logo{
-	font-size: 1.25rem;
+	font-size: .9rem;
+	line-height: 1.1;
 }
 
 .text-logo{
-	font-size: .65rem;
+	font-size: .55rem;
+	letter-spacing: 0.5px;
 }
 
 /* ----- nav ----- */
@@ -87,10 +89,6 @@ h1, h2, h3,
     transition: opacity 0.2s ease;
 }
 
-.btn-don-wrapper:hover .btn-don-bg {
-    opacity: 1;
-}
-
 .btn-don-text {    
     font-size: 1.25rem;
     letter-spacing: 0.5px;   
@@ -99,46 +97,54 @@ h1, h2, h3,
 }
 
 .btn-don-mobile {
-    background-color: #e4a888;
-    font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-    padding: 12px 24px;
-    border-radius: 6px;
+    background-color: #ff5f3f;  
+	color: #131313;  
+    font-size: .75rem;
+	font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 10px;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.2s ease;
-}
-
-.btn-don-mobile:hover,
-.btn-don-mobile:active {
-    background-color: #ff5f3f;    
-	color: #131313;
-	font-size: 1.15rem;
+	display: block;
+    width: 100%;
 }
 
 
 
-// Small devices (landscape phones, 576px and up)
+
+
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
 }
 
-// Medium devices (tablets, 768px and up)
+ /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
 }
 
-// Large devices (desktops, 992px and up)
+ /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+	.logo-img {
+		max-width: 50%;
+	}
+
+	.title-logo{
+		font-size: 1.25rem;
+	}
+
+	.text-logo{
+		font-size: .65rem;
+	}
 }
 
-// X-Large devices (large desktops, 1200px and up)
+ /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
+ /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
 
 }
