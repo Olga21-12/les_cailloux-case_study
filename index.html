@@ -20,71 +20,101 @@
 
 	<header class="py-2">
 		<div class="container">
-			<section class="row">
-				<article class="col-12">
-					<nav class="navbar navbar-expand-lg align-items-center justify-content-between">
-						<div class="order-1 col-5 col-lg-2 d-flex flex-column logo align-items-center text-center">				  
-						    <a class="navbar-brand m-0 w-100 text-center" href="index.html">
-						    	<img src="images/logo.png" alt="logo" class="logo-img">						    
-								<div class="mt-1">
-									<h4 class="title-logo m-0 fw-bold">Les Cailloux</h4>
-									<p class="text-logo text-uppercase m-0">accueil & espoir</p>
-								</div>
+			<nav class="navbar navbar-expand-lg align-items-center justify-content-between">
+				<div class="order-1 col-5 col-lg-2 d-flex flex-column logo align-items-center text-center">				  
+					<a class="navbar-brand m-0 w-100 text-center" href="index.html">
+						<img src="images/logo.png" alt="logo" class="logo-img">						    
+						<div class="mt-1">
+							<h4 class="title-logo m-0 fw-bold color-text">Les Cailloux</h4>
+							<p class="text-logo text-uppercase m-0 color-text">accueil & espoir</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-4 order-2 d-lg-none text-center p-0">
+					<a href="#" class="btn btn-don-mobile text-uppercase text-nowrap">
+						Faire un don
+					</a>
+				</div>
+
+				<div class="col-3 order-3 d-lg-none text-center">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fa-solid fa-bars fs-2 color-text"></i>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse order-4 order-lg-2 col-lg-8 justify-content-space-between" id="navbarSupportedContent">
+					<ul class="navbar-nav mb-2 mb-lg-0 text-center align-items-center gap-lg-3">
+						<li class="nav-item">
+							<a class="nav-link color-text nav-active" href="#">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-text" href="#">Qui<br>sommes-nous</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-text text-center lh-sm" href="#">
+								<span>Type d'accueil<br></span>
+								<span>Inscription</span>
 							</a>
-						</div>
-
-						<div class="col-4 order-2 d-lg-none text-center p-0">
-							<a href="#" class="btn btn-don-mobile text-uppercase text-nowrap">
-								Faire un don
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-text" href="#">Nous aides</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-text" href="#">Actualités</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link color-text text-center lh-sm" href="#">
+								<span>FAQ<br></span>
+								<span>Contacts</span>
 							</a>
-						</div>
-
-					    <div class="col-3 order-3 d-lg-none text-center">
-							<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<i class="fa-solid fa-bars fs-2 color-text"></i>
-							</button>
-						</div>
-
-					    <div class="collapse navbar-collapse order-4 order-lg-2 col-lg-8 justify-content-space-between" id="navbarSupportedContent">
-							<ul class="navbar-nav mb-2 mb-lg-0 text-center align-items-center gap-lg-3">
-								<li class="nav-item">
-									<a class="nav-link color-text nav-active" href="#">Accueil</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link color-text" href="#">Qui<br>sommes-nous</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link color-text text-center lh-sm" href="#">
-                                        <span>Type d'accueil<br></span>
-                                        <span>Inscription</span>
-                                    </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link color-text" href="#">Nous aides</a>
-								</li>
-                                <li class="nav-item">
-									<a class="nav-link color-text" href="#">Actualités</a>
-								</li>
-                                <li class="nav-item">
-									<a class="nav-link color-text text-center lh-sm" href="#">
-                                        <span>FAQ<br></span>
-                                        <span>Contacts</span>
-                                    </a>
-								</li>
-							</ul>
-					    </div>	
-                        <div class="order-lg-3 col-lg-2 d-none d-lg-flex justify-content-center">
-                            <a href="#" class="btn-don-wrapper position-relative d-inline-flex align-items-center justify-content-center text-decoration-none">
-                                <img src="images/fonbutton.png" alt="button" class="btn-don-bg">
-                                <span class="text-uppercase fw-bold position-absolute color-text btn-don-text text-center">faire<br>un don</span>
-                            </a>
-                        </div>											
-					</nav>					
-				</article>			
-			</section>			
+						</li>
+					</ul>
+				</div>	
+				<div class="order-lg-3 col-lg-2 d-none d-lg-flex justify-content-center">
+					<a href="#" class="btn-don-wrapper position-relative d-inline-flex align-items-center justify-content-center text-decoration-none">
+						<img src="images/fonbutton.png" alt="button" class="btn-don-bg">
+						<span class="text-uppercase fw-bold position-absolute color-text btn-don-text text-center">faire<br>un don</span>
+					</a>
+				</div>											
+			</nav>
 		</div>		
 	</header>
 
+	<main>
+		<section class="container hero py-3 py-lg-4">
+			<article class="row align-items-center gy-4">				
+				
+				<div class="order-2 order-lg-1 col-12 col-lg-4 text-center">
+					<h1 class="hero-title color-title fw-bold text-uppercase mb-3">
+						Un foyer,<br>
+						une espérance<br>
+						pour chaque enfant
+					</h1>
+					
+					<p class="hero-subtitle mb-4">
+						Centre d’Accueil pour Enfants<br>
+						&amp; Adolescents<br>
+						découvrir à Bruxelles
+					</p>
+
+					<div class="hero-btn-container position-relative d-inline-block">
+						<img src="images/fon4.png" alt="" class="hero-spots-bg position-absolute">
+						
+						<a href="#" class="btn btn-hero text-capitalize position-relative z-1">
+							En savoir plus
+						</a>
+					</div>
+				</div>
+
+				<div class="order-1 order-lg-2 col-12 col-lg-8">
+					<div class="hero-img-wrapper">
+						<img src="images/children-together.jpg" alt="Enfants Les Cailloux" class="img-fluid hero-img w-100">
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
 
 
 
