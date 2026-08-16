@@ -466,6 +466,72 @@ h1, h2, h3,
     object-fit: cover;
 }
 
+/* ----- FOOTER STYLES ----- */
+
+.site-footer {
+    background-image: url('../images/bg-pattern.jpg'); /* Тот же фоновый паттерн */
+    background-repeat: repeat-x;
+    background-position: center center;
+    background-size: auto 100%;
+    position: relative;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.footer-logo {
+    max-width: 60px;
+}
+
+.footer-text {
+    line-height: 1.4;
+    font-size: 0.82rem;
+}
+
+/* Ссылки навигации и иконки */
+.footer-link {
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover,
+.social-icons a:hover {
+    opacity: 0.75;
+}
+
+/* Миниатюра карты */
+.footer-map-wrapper img {
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Форма обратной связи */
+.footer-input {
+    background-color: #ffffff;
+    border: 1px solid #b2c1d3;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #415b7e;
+    padding: 6px 12px;
+}
+
+.footer-input::placeholder {
+    color: #5d7593;
+}
+
+.footer-input:focus {
+    border-color: #415b7e;
+    box-shadow: 0 0 0 0.2rem rgba(65, 91, 126, 0.15);
+}
+
+.footer-textarea {
+    resize: none;
+}
+
+/* ----- АДАПТИВНОСТЬ ----- */
+@media (max-width: 575.98px) {
+    .site-footer {
+        background-size: auto; /* На маленьких экранах паттерн просто замостит фон */
+    }
+}
+
 
 
 /* Small devices (landscape phones, 576px and up) */
