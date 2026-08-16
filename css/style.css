@@ -221,6 +221,11 @@ h1, h2, h3,
     letter-spacing: 0.5px;
 }
 
+
+
+
+
+
 /* ----- АДАПТИВНОСТЬ ----- */
 @media (max-width: 991.98px) {
     .value-circle {
@@ -231,6 +236,139 @@ h1, h2, h3,
 
     .value-text {
         font-size: 0.72rem;
+    }
+}
+
+
+
+/* ----- CARDS SECTION STYLES ----- */
+
+.custom-card {
+    background-color: #ffffff;
+    transition: transform 0.25 ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Фиксируем высоту фото в карточке, чтобы все смотрелось симметрично */
+.card-thumb {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.4rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+/* Базовые стили для кнопок в карточках */
+.btn-card {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 8px 22px;
+    border-radius: 10px;
+    border: none;
+    color: #494948;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.btn-card:hover {
+    opacity: 0.88;
+    color: #131313;
+    transform: translateY(-1px);
+}
+
+/* Цвета кнопок под макет */
+.btn-purple {
+    background-color: #d8c5e3; /* Фиолетовая */
+}
+
+.btn-green {
+    background-color: #c0d8b8; /* Зеленая */
+}
+
+.btn-yellow {
+    background-color: #f6d38b; /* Желтая */
+}
+
+/* ----- АДАПТИВНОСТЬ ----- */
+@media (max-width: 991.98px) {
+    .card-thumb {
+        height: 200px;
+    }
+    
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* ----- СЕКЦИЯ 1: NOUS SOUTENIR ----- */
+
+/* Круглое фото строго фиксированной пропорции */
+.soutenir-img-wrapper {
+    max-width: 440px; /* Ограничиваем максимальный размер круга */
+    border: 8px solid #ffffff; /* Белая аккуратная рамочка вокруг фото */
+}
+
+/* Большая оранжево-персиковая кнопка пожертвования */
+.btn-don-lg {
+    background-color: #e4a888;
+    color: #494948;
+    font-size: 1.1rem;
+    padding: 12px 32px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-don-lg:hover {
+    background-color: #d89674;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Фоновое акварельное пятно справа */
+.spot-soutenir-right {
+    width: 180px;
+    right: -60px;
+    top: 40%;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Ссылка "En savoir plus" */
+.link-more {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* ----- СЕКЦИЯ 2: PROCÉDURE D'ADMISSION ----- */
+
+.admission-img-wrapper img {
+    border-radius: 18px;
+    object-fit: cover;
+    max-height: 380px;
+}
+
+/* ----- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ----- */
+@media (max-width: 991.98px) {
+    /* На мобилке кнопка пожертвования становится шире для удобства нажатия */
+    .btn-don-lg {
+        width: 100%;
+        max-width: 300px;
+        font-size: 1rem;
     }
 }
 
