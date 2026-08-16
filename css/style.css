@@ -372,6 +372,99 @@ h1, h2, h3,
     }
 }
 
+/* ----- СЕКЦИЯ: NOTRE EQUIPE ----- */
+
+.team-card {
+    background-color: #ffffff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Высота и кадрирование фотографий команды */
+.team-thumb {
+    height: 280px;
+    object-fit: cover;
+    object-position: center top; /* Держит фокус на лицах */
+}
+
+/* Имена и должности */
+.team-name {
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.team-role {
+    font-size: 0.88rem;
+    line-height: 1.3;
+    opacity: 0.85;
+}
+
+/* Фоновое акварельное пятно справа снизу */
+.spot-team-bottom {
+    width: 220px;
+    right: -20px;
+    bottom: -60px;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+/* ----- АДАПТИВНОСТЬ ----- */
+@media (max-width: 991.98px) {
+    .team-thumb {
+        height: 240px;
+    }
+
+    .team-name {
+        font-size: 1.05rem;
+    }
+}
+
+/* ----- СЕКЦИЯ: ACTUALITES ----- */
+
+/* Новости: карточки и миниатюры */
+.news-thumb {
+    width: 130px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.news-title {
+    font-size: 1.05rem;
+}
+
+.news-text {
+    line-height: 1.35;
+}
+
+/* Десктопная сетка галереи (CSS Grid) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* Мобильная карусель фото */
+.carousel-gallery-img {
+    height: 220px;
+    object-fit: cover;
+}
 
 
 
