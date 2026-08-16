@@ -532,6 +532,53 @@ h1, h2, h3,
     }
 }
 
+/* ----- КНОПКА ВОЗВРАТА НАВЕРХ ----- */
+
+.btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: #ff795e; /* Теплый коралловый цвет акцентных кнопок */
+    color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1080; /* Поверх всех элементов и фиксированных меню */
+    cursor: pointer;
+    
+    /* Состояние по умолчанию: скрыта и прозрачна */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+/* Класс, который добавляем через JS при прокрутке */
+.btn-back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-back-to-top:hover {
+    background-color: #ff5f3f;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптив для мобилок */
+@media (max-width: 575.98px) {
+    .btn-back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+}
+
 
 
 /* Small devices (landscape phones, 576px and up) */
